@@ -11,7 +11,7 @@ export default function Book(index) {
             </div>
             <div className="book-details">
                 <h3 className="book-title">{index.book.volumeInfo.title}</h3>
-                <p className="book-author">Author(s): {index.book.volumeInfo.authors[0]}</p>
+                <p className="book-author">Author(s): {index.book.volumeInfo.authors ? index.book.volumeInfo.authors[0] : ''}</p>
                 <p className="book-excerpt">{
                     aaa == undefined ? '' : aaa.substr(0, 500)
                 }</p>
